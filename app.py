@@ -225,7 +225,7 @@ def hello():
     return f"""
     <html>
         <head>
-            <title>DEVELOPMENT</title>
+            <title>DEVELOPMENT infra</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <style>{GLOBAL_CSS}</style>
         </head>

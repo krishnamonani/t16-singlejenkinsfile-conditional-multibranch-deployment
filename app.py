@@ -369,14 +369,14 @@ def get_stats():
             "total_requests": request_counter,
             "current_time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "hostname": os.getenv("HOSTNAME", "unknown"),
-            "environment": os.getenv("FLASK_ENV", "development"),
+            "environment": os.getenv("FLASK_ENV", "production"),
             "message": "DevOps monitoring ready! 📊"
         }
         return jsonify(stats)
     
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     hostname = os.getenv("HOSTNAME", "unknown")
-    environment = os.getenv("FLASK_ENV", "development")
+    environment = os.getenv("FLASK_ENV", "production")
     
     env_color = "#28a745" if environment == "production" else "#ffc107"
     
